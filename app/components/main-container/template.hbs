@@ -1,0 +1,4 @@
+<h2>{{title}}</h2>
+{{selector-control options=oscillatorTypes selected=oscillatorType onChange=(action 'changeType')}}
+{{stepper-control min=0 max=22000 smallStep=100 largeStep=1000 value=oscillatorFrequency onChange=(action 'changeFrequency')}}
+{{play-button playing=playing onClick=(if playing (action 'stop') (action 'play'))}}
